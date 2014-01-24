@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="www.omeusite.pt">
+<meta name="keywords" content="jquery, mobile, flag, lisboa">
+
+<title>jQuery Mobile Web App - Workshop</title>
+  
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="jquery-mobile/exemplo_responsive.css" />
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
+</head> 
+
+
+
+<body> 
+
+<div data-role="page" id="page" data-theme="b">
+	<div data-role="header">
+		<h1>Page One</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a data-mini="true" href="#page2" data-transition="flip" >ui-block</a></li>
+            <li><a href="#page3">data-filter</a></li>
+			<li><a href="#page4">Page 4</a></li>
+            <li><a href="#page5">Tap</a></li>
+            <li><a href="#page6">Swipe</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-role="button" data-icon="gear">
+	<div data-role="header">
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		<div class="rwd-example">
+    <!-- Lead story block -->
+    <div class="ui-block-a">
+        <div class="ui-body ui-body-d">
+            <h2>Apple schedules 'iPad Mini' event for October 23</h2>
+            <p>One of the worst-kept secrets in tech has been confirmed: Apple will hold an event October 23 in San Jose, California, at which the company is widely expected to unveil a smaller, cheaper version of its popular iPad called "Mini".</p>
+        </div>
+    </div>
+    <!-- secondary story block #1 -->
+    <div class="ui-block-b">
+        <div class="ui-body ui-body-d">
+            <h4>Microsoft Surface tablet goes on sale for $499</h4>
+            <p>The Microsoft Surface tablet picture has come into focus. The Redmond giant filled in the blanks on the new tablet's availability and specs.</p>
+        </div>
+    </div>
+    <!-- secondary story block #2 -->
+    <div class="ui-block-c">
+        <div class="ui-body ui-body-d">
+            <h4>AOL unveils Alto, an email service that syncs 5 accounts</h4>
+            <p>AOL, struggling to shed its outdated image, is reimagining one of the most visibly aging parts of its platform: Its email service. </p>
+        </div>
+    </div>
+</div><!-- /rwd-example -->
+<br>
+<br>
+<div class="rwd-example">
+    <!-- Lead story block -->
+    <div class="ui-block-a">
+        <div class="ui-body ui-body-d">
+            <h2>Apple schedules 'iPad Mini' event for October 23</h2>
+            <p>One of the worst-kept secrets in tech has been confirmed: Apple will hold an event October 23 in San Jose, California, at which the company is widely expected to unveil a smaller, cheaper version of its popular iPad called "Mini".</p>
+        </div>
+    </div>
+    <!-- secondary story block #1 -->
+    <div class="ui-block-b">
+        <div class="ui-body ui-body-d">
+            <h4>Microsoft Surface tablet goes on sale for $499</h4>
+            <p>The Microsoft Surface tablet picture has come into focus. The Redmond giant filled in the blanks on the new tablet's availability and specs.</p>
+        </div>
+    </div>
+    <!-- secondary story block #2 -->
+    <div class="ui-block-c">
+        <div class="ui-body ui-body-d">
+            <h4>AOL unveils Alto, an email service that syncs 5 accounts</h4>
+            <p>AOL, struggling to shed its outdated image, is reimagining one of the most visibly aging parts of its platform: Its email service. </p>
+        </div>
+    </div>
+</div><!-- /rwd-example -->	
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-theme="e">
+	<div data-role="header">
+		<h1>data-filter</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-filter="true" data-inset="true" data-input="#filterBasic-input">
+            <li>Acura</li>
+            <li>Audi</li>
+            <li>BMW</li>
+            <li>Cadillac</li>
+            <li>Ferrari</li>
+		</ul>	
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Page Five</h1>
+	</div>
+	<div data-role="content">	
+		<h3>Tap the green square to see the above code applied:</h3>
+        <div class="box"></div>	
+        </div>
+        
+        <h3>Swipe the green rectangle to change its color:</h3>
+		<div class="box"></div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page6" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Page Five</h1>
+	</div>
+	<div data-role="content">	
+        <h3>Swipe the green rectangle to change its color:</h3>
+		<div class="box_swipe"></div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+
+<script>
+$(function(){
+  $( "div.box" ).bind( "tap", tapHandler );
+  function tapHandler( event ){
+    $( event.target ).addClass( "tap" );
+  }
+});
+
+$(function(){
+$( "div.box_swipe" ).on( "swipe", swipeHandler );
+  function swipeHandler( event ){
+    $( event.target ).addClass( "swipe" );
+  }
+});
+
+</script>
+
+</body>
+</html>
